@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐍 Snake Game - moekyawaung-tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🐍 Classic Snake</h1>
+            <div>Score: <span id="score">0</span></div>
+        </header>
+        <canvas id="gameCanvas" width="320" height="320"></canvas>
+        <div class="controls">
+            <button onclick="startGame()">Start Game</button>
+            <button onclick="resetGame()">Reset</button>
+        </div>
+        <div id="gameOver" class="game-over" style="display:none;">
+            <h2>Game Over</h2>
+            <p>Your Score: <span id="finalScore">0</span></p>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
